@@ -1,0 +1,34 @@
+{"products":[
+    {
+        "name":"Motor Oil",
+        "img" : "1.png",
+        "price":"$32"
+    },
+    {
+        "name":"Commercial Carpet",
+        "img" : "2.png",
+        "price":"$32"
+    },
+    {
+        "name":"Smartlock Slim",
+        "img" : "3.png",
+        "price":"$32"
+    },
+    {
+        "name":"Mark Whole",
+        "img" : "4.png",
+        "price":"$32"
+    },
+    {
+        "name":"Motor Oil",
+        "img" : "5.png",
+        "price":"$32"
+    },
+    {
+        "name":"Motor Oil",
+        "img" : "6.png",
+        "price":"$32"
+    }
+
+]
+}

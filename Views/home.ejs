@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>      
+    <div class="header">
+        <div class="sale"><p>Time To Shop! EXTRA 30% OFF Holiday Deals For You!</p></div>
+        <div class="tt">
+            <div class="help"><a href="#">HELP CENTER </a></div>
+            <div class="register"><a href="/register">REGISTER</a></div>
+            <div class="login"><a href="/login">LOGIN</a></div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="logo" style="flex-grow: 3"><a href="/">TuLySa</a></div>
+        <div class="formSearch" style="flex-grow: 5">
+            <input type="text" name="search" placeholder="Search..." style="padding-left: 10px;">
+            <div class="iconSearch">
+                <i class="fas fa-search" ></i>
+            </div>
+    
+        </div>
+        <div class="flashSale" style="flex-grow: 0.7">
+            <i class="fas fa-bolt" style="color: white;" ></i>
+            <p>Flash Sale </p> 
+        </div>
+        <div class="acc" style="flex-grow: 0.7">
+            <i class="fas fa-user" style="color: white;" ></i>
+            <p>My Account</p>
+        </div>
+        <div class="cart" style="flex-grow: 0.6">
+            <i class="fas fa-shopping-cart" style="color: white;font-size: 30px;" ></i>
+        </div>
+    </div>
+    <div class="main">
+        <div class="listAnd">
+            <div class="list">
+                <ul>
+                    <li><a href="#">Home & Furius</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Baby</a></li>
+                    <li><a href="#">Heath & Beauty</a></li>
+                    <li><a href="#">Animal</a></li>
+                    <li><a href="#">Electronic</a></li>
+                    <li><a href="#">Toy</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+            </div>
+
+            <div class="imgMain">
+            
+            </div>
+        </div>
+
+        <div class="products">
+            <p style="padding:20px">FLASH SALE</p>
+            <div class="cartProducts">
+            <% products.forEach(function(p){ %>
+                <div class="cartProduct">
+                    <div class="imgProduct" style="background-image: url('images/<%=p.img%>');">
+                        
+                    </div>
+                    <div class="nameProduct"><%=p.name%></div>
+                    <div class="priceProduct"><b><%=p.price%></b></div>
+                </div>
+
+            <% }); %>
+                
+                
+            </div>
+            
+        </div>
+
+    </div>
+        
+</body>
+</html> 

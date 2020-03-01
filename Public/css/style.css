@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    height: 2000px;
+    background-color:whitesmoke;
+}
+.header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0px;
+ height: 30px;
+ background-color: #a97548;
+}
+
+.header  p{
+    font-size: 13px;
+    color:white;
+    margin: 0px;
+}
+
+.header .tt{
+   
+    display: flex;
+    
+}
+.header a{
+    margin-right: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+.header a:hover{
+    text-decoration: underline;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: orange;
+    position: sticky;
+    top: 0px;
+}
+.navbar .logo{
+    text-align: center;
+}
+.navbar .logo a{
+    margin: 0px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+    .navbar .formSearch input {
+       width: 100%;
+       height: 43px;
+       border: none;
+       font-size: 15px;
+ }
+  .navbar .formSearch{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .navbar .formSearch .iconSearch{
+     width: 43px;
+     height: 43px;
+     background-color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  .navbar .formSearch .iconSearch:hover{
+      background-color: #736e6e;
+  }
+  .navbar .formSearch .iconSearch i{
+      font-size: 30px;
+      color: silver;
+    
+  }
+  .navbar p{
+      font-size: 18px;
+      color: white;
+      margin-left: 10px;
+  }
+  .navbar .flashSale{
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+  }
+  .navbar .acc{
+      display: flex;
+      align-items: center;
+  }
+.main{
+    
+}
+.main .listAnd{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 20px;
+}
+.main .listAnd .list{
+    width: 20%;
+}
+.main .listAnd .list ul{
+    padding:0px;
+    margin:0px;
+}
+.main .listAnd .list ul li{
+    list-style-type: none;
+    margin:0px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.main .listAnd .list ul li:hover{
+    background-color:#ddd;
+    border-left: 4px solid orange;
+}
+.main .listAnd .list ul li a{
+    margin-left:30px ;
+    text-decoration: none;
+    color: black;
+}
+
+.main .listAnd .imgMain{
+    width: 80%;
+   height: 400px;
+    background-image: url('https://d146yr8pbl9dje.cloudfront.net/1577702401366.1611.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.main .products{
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: white;
+}
+.main .products .cartProducts{
+    display: flex;
+    flex-flow: nowrap;
+    margin-top: 30px;
+}
+.main .products .cartProducts .cartProduct{
+    width: 200px;
+    height: 300px;
+    margin-left: 20px;
+}
+.main .products .cartProducts .cartProduct:hover{
+    box-shadow: 1px 1px 10px #dad6d6;
+}
+.main .products .cartProducts .cartProduct .imgProduct{
+    height: 70%;
+    background-size: cover;
+   background-position: center ;
+}
+.main .products .cartProducts .cartProduct .nameProduct{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.main .products .cartProducts .cartProduct .priceProduct{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+
+.registerAcc{
+    width: 90%;
+    margin :0 auto;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+}
+.registerAcc .loginAcc{
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+}
+.registerAcc .loginAcc .loginAcc-content,.createAcc-form{
+    text-align: center;
+}
+.registerAcc  h2{
+    font-weight: lighter;
+}
+.registerAcc .loginAcc .loginAcc-content a{
+    width: 40%;
+    display: inline-block;
+    transition: all 0.3s;
+    border-radius: 3px;
+    font-size: 15px;
+    border: 0;
+    box-shadow: none;
+    padding: 15px 20px;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 12px 0 rgba(98,98,98,0.43);
+}
+.registerAcc .createAcc{
+    width: 50%;
+    height: 100%;
+}
+.registerAcc .loginAcc .createAcc-form{
+    text-align: center;
+    
+}
+.registerAcc .createAcc .createAcc-form input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+.registerAcc .createAcc .createAcc-form .btnCreate{
+    width: 50%;
+    display: inline-block;
+    transition: all .3s;
+    border-radius: 3px;
+    font-size: 12px;
+    border: 0;
+    box-shadow: none;
+    padding: 15px 20px;
+    background: #444;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px 0 rgba(98,98,98,.43);
+}
